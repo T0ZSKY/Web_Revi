@@ -18,3 +18,19 @@ function updatemenu() {
     });
   });
   
+  function envoyerEmail() {
+    // Adresse email
+    var email = "tomlimon1508@gmail.com";
+
+    // Sujet du mail
+    var sujet = "Revi aide";
+
+    // Corps du message prérempli
+    var corpsMessage = "Bonjour, \n\nJe vous contacte pour obtenir de l'aide concernant ... \n\nCordialement,\n\nVotre nom";
+
+    // Générer le lien pour envoyer l'email
+    var lien = "mailto:" + email + "?subject=" + encodeURIComponent(sujet) + "&body=" + encodeURIComponent(corpsMessage);
+
+    // Ouvrir l'application de messagerie avec le message prérempli
+    window.location.href = lien;
+}
